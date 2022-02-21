@@ -2,14 +2,12 @@ package com.bridgelabz;
 
 public class Employee {
 	 
-	public void displayMessage(){
-	        
-		System.out.println("Welcome to Employeewage Computation Program");
-	}
-
-	public static void main(String[] args) {
-	     Employee emp = new Employee();
-	     emp.displayMessage();
-	}
+	  int IS_PRESENT = 1;
+	    public void checkIsPresent(double empCheck){
+	        if(empCheck == IS_PRESENT)
+	            System.out.println("Employee is Present");
+	        else
+	            System.out.println("Employee is Absent"); 
+	    }
 
 }
