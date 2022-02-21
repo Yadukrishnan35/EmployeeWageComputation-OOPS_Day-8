@@ -3,11 +3,17 @@ package com.bridgelabz;
 public class Employee {
 	 
 	  int IS_PRESENT = 1;
-	    public void checkIsPresent(double empCheck){
+	  int WAGE_PER_HR=20;
+	  int FULL_DAY_HR=8;  
+	  public boolean checkIsPresent(double empCheck){
 	        if(empCheck == IS_PRESENT)
-	            System.out.println("Employee is Present");
+	            return true;
 	        else
-	            System.out.println("Employee is Absent"); 
+	            return false; 
 	    }
 
+	  public int calcDailyEmpWage(){
+	        int dailyEmpWage =  WAGE_PER_HR * FULL_DAY_HR;
+	        return  dailyEmpWage; 
+}
 }
